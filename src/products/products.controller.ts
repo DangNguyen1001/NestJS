@@ -1,6 +1,6 @@
 import { Controller, Post, Body, Get, Param, Patch, Delete } from "@nestjs/common";
 import { ProductService } from "./products.service";
-
+import { Entity, Column, PrimaryGeneratedColumn } from 'typeorm';
 @Controller('products')
 export class ProductController {
     constructor(private readonly productService: ProductService) { }
